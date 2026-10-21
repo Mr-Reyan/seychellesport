@@ -77,7 +77,7 @@ def render_article_html(desc_text):
             # Place article image block right after paragraph 3 (matching Bissau layout)
             if p_count == 3:
                 lines.append('          <div class="article-image-block">')
-                lines.append('            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"')
+                lines.append('            <img src="../assets/imgs/warehouse-about.webp"')
                 lines.append('              alt="Ship Supply Operations">')
                 lines.append('          </div>')
                 

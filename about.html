@@ -22,7 +22,9 @@
   <!-- Google Fonts (Serif Headings & Clean Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -40,7 +42,8 @@
     :root {
       --navy: #0A192F;
       --navy-light: #112240;
-      --orange: #D96C3B; /* Rich Maritime Orange */
+      --orange: #D96C3B;
+      /* Rich Maritime Orange */
       --orange-hover: #BF5526;
       --off-white: #F8F9FA;
       --white: #FFFFFF;
@@ -65,7 +68,9 @@
       --font-body: 'Inter', sans-serif;
     }
 
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -110,7 +115,12 @@
     /* =========================================
        TYPOGRAPHY
     ========================================= */
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-family: var(--font-heading);
       font-weight: 600;
       line-height: 1.15;
@@ -178,6 +188,7 @@
     ========================================= */
     .site-header {
       position: fixed;
+      padding: 0 20px;
       top: 0;
       left: 0;
       width: 100%;
@@ -284,7 +295,8 @@
       border-radius: var(--radius-sm);
     }
 
-    .nav-link:hover, .nav-item.active .nav-link {
+    .nav-link:hover,
+    .nav-item.active .nav-link {
       color: var(--orange);
     }
 
@@ -376,10 +388,22 @@
       transform: translateX(-50%) translateY(0);
     }
 
-    .mega-menu::-webkit-scrollbar { width: 6px; }
-    .mega-menu::-webkit-scrollbar-track { background: transparent; }
-    .mega-menu::-webkit-scrollbar-thumb { background: var(--gray-300); border-radius: 10px; }
-    .mega-menu::-webkit-scrollbar-thumb:hover { background: var(--orange); }
+    .mega-menu::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .mega-menu::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .mega-menu::-webkit-scrollbar-thumb {
+      background: var(--gray-300);
+      border-radius: 10px;
+    }
+
+    .mega-menu::-webkit-scrollbar-thumb:hover {
+      background: var(--orange);
+    }
 
     .mega-header {
       display: flex;
@@ -417,7 +441,7 @@
       font-family: var(--font-body);
       color: var(--navy);
     }
-    
+
     .mega-search input::placeholder {
       color: var(--gray-500);
     }
@@ -501,7 +525,10 @@
     }
 
     @keyframes fadeUp {
-      to { opacity: 1; transform: translateY(0); }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .breadcrumb {
@@ -604,7 +631,7 @@
       padding-left: 40px;
       transition: var(--transition);
     }
-    
+
     .why-item::before {
       content: '';
       position: absolute;
@@ -615,11 +642,11 @@
       background: var(--orange);
       transition: var(--transition);
     }
-    
+
     .why-item:hover::before {
       height: 100%;
     }
-    
+
     .why-item:hover {
       transform: translateX(10px);
     }
@@ -633,7 +660,7 @@
       margin-bottom: 16px;
       transition: var(--transition);
     }
-    
+
     .why-item:hover .why-number {
       color: var(--orange);
     }
@@ -852,8 +879,10 @@
        RESPONSIVE DESIGN
     ========================================= */
     @media (max-width: 1024px) {
-      .nav-toggle { display: block; }
-      
+      .nav-toggle {
+        display: block;
+      }
+
       .primary-nav {
         position: fixed;
         top: 0;
@@ -869,18 +898,22 @@
         align-items: flex-start;
         gap: 20px;
       }
-      
-      .primary-nav.open { right: 0; }
-      
+
+      .primary-nav.open {
+        right: 0;
+      }
+
       .nav-list {
         flex-direction: column;
         width: 100%;
         gap: 8px;
         align-items: flex-start;
       }
-      
-      .nav-item { width: 100%; }
-      
+
+      .nav-item {
+        width: 100%;
+      }
+
       .nav-link {
         width: 100%;
         justify-content: space-between;
@@ -888,9 +921,10 @@
         font-size: 1.1rem;
         color: var(--navy);
       }
-      
+
       /* Mobile Dropdown Styles */
-      .dropdown-menu, .mega-menu {
+      .dropdown-menu,
+      .mega-menu {
         position: static !important;
         transform: none !important;
         opacity: 1 !important;
@@ -906,52 +940,109 @@
         width: 100% !important;
         margin-top: 0;
       }
-      
+
       .nav-item.open .dropdown-menu,
       .nav-item.open .mega-menu {
         max-height: 3000px !important;
         margin-top: 10px;
       }
-      
-      .nav-item.has-dropdown::after { display: none; }
-      
-      .dropdown-menu a, .mega-group a {
+
+      .nav-item.has-dropdown::after {
+        display: none;
+      }
+
+      .dropdown-menu a,
+      .mega-group a {
         padding: 12px !important;
         color: var(--gray-700) !important;
         font-size: 0.95rem !important;
       }
-      
-      .mega-header { display: none; }
-      .mega-grid { grid-template-columns: 1fr; gap: 12px; }
-      .mega-group h4 { color: var(--orange); margin-bottom: 8px; padding: 8px 12px; }
-      
-      .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-      .nav-toggle.open span:nth-child(2) { opacity: 0; }
-      .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+      .mega-header {
+        display: none;
+      }
+
+      .mega-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .mega-group h4 {
+        color: var(--orange);
+        margin-bottom: 8px;
+        padding: 8px 12px;
+      }
+
+      .nav-toggle.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      .nav-toggle.open span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .nav-toggle.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
 
       /* Layout Adjustments */
       .hero-image-wrap {
         width: 100%;
         opacity: 0.3;
       }
-      .hero-image-wrap::after { background: linear-gradient(to right, var(--off-white) 0%, rgba(248,249,250,0.8) 100%); }
-      
-      .intro-grid { grid-template-columns: 1fr; gap: 40px; }
-      .intro-image { height: 400px; order: -1; }
-      
-      .why-grid { grid-template-columns: 1fr; gap: 60px; }
-      
-      .footer-grid { grid-template-columns: 1fr 1fr; }
+
+      .hero-image-wrap::after {
+        background: linear-gradient(to right, var(--off-white) 0%, rgba(248, 249, 250, 0.8) 100%);
+      }
+
+      .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .intro-image {
+        height: 400px;
+        order: -1;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
     }
 
     @media (max-width: 768px) {
-      .subpage-hero { padding-top: 120px; padding-bottom: 60px; }
-      .hero-title { font-size: 3rem; }
-      
-      .footer-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
-      .footer-brand p { margin: 24px auto 0; }
-      .footer-contact li { justify-content: center; text-align: left; }
-      .hero-whatsapp-bar { margin: 10px auto 0; }
+      .subpage-hero {
+        padding-top: 120px;
+        padding-bottom: 60px;
+      }
+
+      .hero-title {
+        font-size: 3rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+      }
+
+      .footer-brand p {
+        margin: 24px auto 0;
+      }
+
+      .footer-contact li {
+        justify-content: center;
+        text-align: left;
+      }
+
+      .hero-whatsapp-bar {
+        margin: 10px auto 0;
+      }
     }
   </style>
 </head>
@@ -977,10 +1068,14 @@
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
-          
+
           <!-- Services Dropdown (Right Underneath) -->
           <li class="nav-item has-dropdown">
-            <a class="nav-link" href="services.html">Services <span class="nav-arrow"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></a>
+            <a class="nav-link" href="services.html">Services <span class="nav-arrow"><svg viewBox="0 0 24 24"
+                  width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg></span></a>
             <div class="dropdown-menu">
               <a href="services.html#provisions">Food Provisions Supply</a>
               <a href="services.html#bonded">Bonded Stores</a>
@@ -995,10 +1090,14 @@
               <a href="services.html#publications">Nautical Charts</a>
             </div>
           </li>
-          
+
           <!-- Ports Mega Menu (Centered) -->
           <li class="nav-item has-mega">
-            <a class="nav-link" href="javascript:void(0)">Ports <span class="nav-arrow"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></a>
+            <a class="nav-link" href="javascript:void(0)">Ports <span class="nav-arrow"><svg viewBox="0 0 24 24"
+                  width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg></span></a>
             <div class="mega-menu">
               <div class="mega-header">
                 <div class="mega-header-title">Seychelles & African Port Network</div>
@@ -1012,10 +1111,11 @@
               </div>
             </div>
           </li>
-          
+
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-        <a class="btn btn-primary" style="padding: 14px 32px; font-size: 0.85rem;" href="request-quote.html">Get Quote</a>
+        <a class="btn btn-primary" style="padding: 14px 32px; font-size: 0.85rem;" href="request-quote.html">Get
+          Quote</a>
       </nav>
     </div>
   </header>
@@ -1032,7 +1132,8 @@
           </ul>
           <span class="eyebrow">Corporate Profile</span>
           <h1 class="hero-title">Marine Supply Excellence</h1>
-          <p class="hero-desc">SHIP CHANDLER SEYCHELLES CO., LTD — professional ship chandler services at Port Victoria, Mahé, and all commercial ports across the Seychelles.</p>
+          <p class="hero-desc">SHIP CHANDLER SEYCHELLES CO., LTD — professional ship chandler services at Port Victoria,
+            Mahé, and all commercial ports across the Seychelles.</p>
         </div>
       </div>
       <div class="hero-image-wrap">
@@ -1046,17 +1147,26 @@
         <div class="intro-content reveal">
           <span class="eyebrow">Our Mission</span>
           <h2>Your Trusted Partner at Port Victoria</h2>
-          <p>Ship Chandler Seychelles delivers end-to-end maritime procurement and professional vessel provisioning for ships calling at Port Victoria and surrounding anchorages. We work closely alongside fleet managers, shipowners, technical superintendents, purchasing executives, ship masters, and local shipping agencies to ensure seamless, punctual onboard delivery throughout the vessel's port turnaround.</p>
-          <p>Our commitment is to function as a unified, reliable agency desk for every vessel supply need in Seychelles waters. Whether delivering prime galley provisions, bonded goods, deck consumables, or technical engine-room spares, our dispatch desk synchronizes each order precisely with the ship's confirmed ETA, dock assignment, port timetable, and individual requisition list.</p>
-          <p>Ship Chandler Seychelles operates strictly as dedicated marine suppliers rather than general freight forwarding agents. Our core specialization centers exclusively on ship chandlery: fresh food provisions, galley stores, deck and engine supplies, bonded stores, crew beverages, and cabin consumables.</p>
-          
+          <p>Ship Chandler Seychelles delivers end-to-end maritime procurement and professional vessel provisioning for
+            ships calling at Port Victoria and surrounding anchorages. We work closely alongside fleet managers,
+            shipowners, technical superintendents, purchasing executives, ship masters, and local shipping agencies to
+            ensure seamless, punctual onboard delivery throughout the vessel's port turnaround.</p>
+          <p>Our commitment is to function as a unified, reliable agency desk for every vessel supply need in Seychelles
+            waters. Whether delivering prime galley provisions, bonded goods, deck consumables, or technical engine-room
+            spares, our dispatch desk synchronizes each order precisely with the ship's confirmed ETA, dock assignment,
+            port timetable, and individual requisition list.</p>
+          <p>Ship Chandler Seychelles operates strictly as dedicated marine suppliers rather than general freight
+            forwarding agents. Our core specialization centers exclusively on ship chandlery: fresh food provisions,
+            galley stores, deck and engine supplies, bonded stores, crew beverages, and cabin consumables.</p>
+
           <div style="margin-top: 1.5rem;">
             <a class="btn btn-primary" href="request-quote.html">Submit Your Requisition &rarr;</a>
           </div>
         </div>
 
         <div class="intro-image reveal" style="transition-delay: 0.1s;">
-          <img src="assets/imgs/warehouse-about.webp" alt="Vessel alongside Seychelles berth with provisioning equipment">
+          <img src="assets/imgs/warehouse-about.webp"
+            alt="Vessel alongside Seychelles berth with provisioning equipment">
         </div>
       </div>
     </section>
@@ -1066,40 +1176,43 @@
       <div class="container">
         <div class="reveal">
           <span class="eyebrow">Why Choose Us</span>
-          <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem); max-width: 800px;">Why Partner With Ship Chandler Seychelles?</h2>
+          <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem); max-width: 800px;">Why Choose Ship Chandler Seychelles?</h2>
         </div>
-        
+
         <div class="why-grid">
           <div class="why-item reveal">
             <div class="why-number">01</div>
             <h3>Single Point of Contact</h3>
-            <p>Manage all your supply categories through one dedicated operations desk, saving you time and streamlining your port call.</p>
+            <p>Manage all your supply categories through one dedicated operations desk, saving you time and streamlining
+              your port call.</p>
           </div>
-          
+
           <div class="why-item reveal reveal-delay-1">
             <div class="why-number">02</div>
             <h3>Fast RFQ Turnaround</h3>
-            <p>We prioritize prompt communication and accurate quotation to match the fast pace of your vessel's schedule.</p>
+            <p>We prioritize prompt communication and accurate quotation to match the fast pace of your vessel's
+              schedule.</p>
           </div>
-          
+
           <div class="why-item reveal">
             <div class="why-number">03</div>
             <h3>Competitive Pricing</h3>
-            <p>Benefit from cost-effective sourcing without ever compromising on the quality of products and service.</p>
+            <p>Benefit from cost-effective sourcing without ever compromising on the quality of products and service.
+            </p>
           </div>
-          
+
           <div class="why-item reveal reveal-delay-1">
             <div class="why-number">04</div>
             <h3>Local & International Sourcing</h3>
             <p>Direct access to trusted local suppliers and global networks for specialized marine products.</p>
           </div>
-          
+
           <div class="why-item reveal">
             <div class="why-number">05</div>
             <h3>Consolidated Delivery</h3>
             <p>Combine provisions and technical stores into one coordinated, single delivery to your vessel.</p>
           </div>
-          
+
           <div class="why-item reveal reveal-delay-1">
             <div class="why-number">06</div>
             <h3>IMPA Compliance</h3>
@@ -1114,7 +1227,8 @@
       <div class="container reveal">
         <h2>Ready to Supply Your Vessel?</h2>
         <p>Send us your requisition list and our team will provide a competitive quote within 2 hours.</p>
-        <a class="btn btn-primary" style="background: var(--white); color: var(--navy);" href="request-quote.html">Request a Quote Now</a>
+        <a class="btn btn-primary" style="background: var(--white); color: var(--navy);"
+          href="request-quote.html">Request a Quote Now</a>
       </div>
     </section>
   </main>
@@ -1131,7 +1245,9 @@
               <span style="color: var(--orange);">Seychelles</span>
             </span>
           </a>
-          <p>SHIP CHANDLER SEYCHELLES CO., LTD is a licensed marine supplier providing food provisions, food stores, bond store supply, drinks, snacks, and emergency vessel supply services across Port Victoria, Mahé, Seychelles.</p>
+          <p>SHIP CHANDLER SEYCHELLES CO., LTD is a licensed marine supplier providing food provisions, food stores,
+            bond store supply, drinks, snacks, and emergency vessel supply services across Port Victoria, Mahé,
+            Seychelles.</p>
         </div>
 
         <div class="footer-col">
@@ -1160,13 +1276,16 @@
           <h4>Contact Us</h4>
           <ul class="footer-contact">
             <li><i class="fas fa-map-marker-alt"></i> New Port, Port Victoria, Mahé, Seychelles</li>
-            <li><i class="fas fa-envelope"></i> <a href="mailto:sales@shipchandlerseychelles.com" style="color:inherit;">sales@shipchandlerseychelles.com</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:sales@shipchandlerseychelles.com"
+                style="color:inherit;">sales@shipchandlerseychelles.com</a></li>
             <li><i class="fas fa-user-tie"></i> Jean Hoareau</li>
             <li>
-              <a class="hero-whatsapp-bar" href="https://wa.me/2482743244" target="_blank" rel="noopener noreferrer" aria-label="Direct WhatsApp contact (+248) 2 743 244">
+              <a class="hero-whatsapp-bar" href="https://wa.me/2482743244" target="_blank" rel="noopener noreferrer"
+                aria-label="Direct WhatsApp contact (+248) 2 743 244">
                 <span class="hero-whatsapp-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                   </svg>
                 </span>
                 <span class="hero-whatsapp-tag">WhatsApp:</span>
@@ -1185,7 +1304,8 @@
   </footer>
 
   <!-- FLOATING WHATSAPP -->
-  <a href="https://wa.me/2482743244" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Contact +248 2 743 244">
+  <a href="https://wa.me/2482743244" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    aria-label="WhatsApp Contact +248 2 743 244">
     <i class="fab fa-whatsapp"></i>
   </a>
 

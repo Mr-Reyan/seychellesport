@@ -22,16 +22,18 @@
     <!-- Google Fonts (Serif Headings & Clean Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Favicon -->
     <!-- Favicon & App Icons -->
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="assets/imgs/favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="assets/imgs/favicon.png">
 
     <style>
         /* =========================================
@@ -40,7 +42,8 @@
         :root {
             --navy: #0A192F;
             --navy-light: #112240;
-            --orange: #D96C3B; /* Rich Maritime Orange */
+            --orange: #D96C3B;
+            /* Rich Maritime Orange */
             --orange-hover: #BF5526;
             --off-white: #F8F9FA;
             --white: #FFFFFF;
@@ -65,7 +68,9 @@
             --font-body: 'Inter', sans-serif;
         }
 
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -110,7 +115,12 @@
         /* =========================================
            TYPOGRAPHY
         ========================================= */
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: var(--font-heading);
             font-weight: 600;
             line-height: 1.15;
@@ -178,6 +188,7 @@
         ========================================= */
         .site-header {
             position: fixed;
+            padding: 0 20px;
             top: 0;
             left: 0;
             width: 100%;
@@ -284,7 +295,8 @@
             border-radius: var(--radius-sm);
         }
 
-        .nav-link:hover, .nav-item.active .nav-link {
+        .nav-link:hover,
+        .nav-item.active .nav-link {
             color: var(--orange);
         }
 
@@ -376,10 +388,22 @@
             transform: translateX(-50%) translateY(0);
         }
 
-        .mega-menu::-webkit-scrollbar { width: 6px; }
-        .mega-menu::-webkit-scrollbar-track { background: transparent; }
-        .mega-menu::-webkit-scrollbar-thumb { background: var(--gray-300); border-radius: 10px; }
-        .mega-menu::-webkit-scrollbar-thumb:hover { background: var(--orange); }
+        .mega-menu::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .mega-menu::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .mega-menu::-webkit-scrollbar-thumb {
+            background: var(--gray-300);
+            border-radius: 10px;
+        }
+
+        .mega-menu::-webkit-scrollbar-thumb:hover {
+            background: var(--orange);
+        }
 
         .mega-header {
             display: flex;
@@ -417,7 +441,7 @@
             font-family: var(--font-body);
             color: var(--navy);
         }
-        
+
         .mega-search input::placeholder {
             color: var(--gray-500);
         }
@@ -487,7 +511,10 @@
         }
 
         @keyframes fadeUp {
-            to { opacity: 1; transform: translateY(0); }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .breadcrumb {
@@ -561,7 +588,7 @@
             opacity: 0.35;
             z-index: 1;
         }
-        
+
         .contact-visual-overlay {
             position: absolute;
             top: 0;
@@ -622,7 +649,7 @@
             font-size: 1.2rem;
             transition: var(--transition);
         }
-        
+
         .glass-panel-icon.whatsapp {
             background: rgba(37, 211, 102, 0.15);
             color: #25D366;
@@ -642,7 +669,8 @@
             font-weight: 600;
         }
 
-        .glass-panel-text p, .glass-panel-text a {
+        .glass-panel-text p,
+        .glass-panel-text a {
             color: var(--white);
             font-size: 1.1rem;
             font-weight: 500;
@@ -707,7 +735,7 @@
         .form-group textarea:focus {
             border-bottom-color: var(--orange);
         }
-        
+
         .form-group input::placeholder,
         .form-group textarea::placeholder {
             color: var(--gray-300);
@@ -757,9 +785,14 @@
             opacity: 1;
             transform: translateY(0);
         }
-        
-        .reveal-delay-1 { transition-delay: 0.1s; }
-        .reveal-delay-2 { transition-delay: 0.2s; }
+
+        .reveal-delay-1 {
+            transition-delay: 0.1s;
+        }
+
+        .reveal-delay-2 {
+            transition-delay: 0.2s;
+        }
 
         /* =========================================
            FOOTER (DARK THEME)
@@ -927,8 +960,10 @@
            RESPONSIVE DESIGN
         ========================================= */
         @media (max-width: 1024px) {
-            .nav-toggle { display: block; }
-            
+            .nav-toggle {
+                display: block;
+            }
+
             .primary-nav {
                 position: fixed;
                 top: 0;
@@ -944,18 +979,22 @@
                 align-items: flex-start;
                 gap: 20px;
             }
-            
-            .primary-nav.open { right: 0; }
-            
+
+            .primary-nav.open {
+                right: 0;
+            }
+
             .nav-list {
                 flex-direction: column;
                 width: 100%;
                 gap: 8px;
                 align-items: flex-start;
             }
-            
-            .nav-item { width: 100%; }
-            
+
+            .nav-item {
+                width: 100%;
+            }
+
             .nav-link {
                 width: 100%;
                 justify-content: space-between;
@@ -963,9 +1002,10 @@
                 font-size: 1.1rem;
                 color: var(--navy);
             }
-            
+
             /* Mobile Dropdown Styles */
-            .dropdown-menu, .mega-menu {
+            .dropdown-menu,
+            .mega-menu {
                 position: static !important;
                 transform: none !important;
                 opacity: 1 !important;
@@ -981,53 +1021,129 @@
                 width: 100% !important;
                 margin-top: 0;
             }
-            
+
             .nav-item.open .dropdown-menu,
             .nav-item.open .mega-menu {
                 max-height: 3000px !important;
                 margin-top: 10px;
             }
-            
-            .nav-item.has-dropdown::after { display: none; }
-            
-            .dropdown-menu a, .mega-group a {
+
+            .nav-item.has-dropdown::after {
+                display: none;
+            }
+
+            .dropdown-menu a,
+            .mega-group a {
                 padding: 12px !important;
                 color: var(--gray-700) !important;
                 font-size: 0.95rem !important;
             }
-            
-            .mega-header { display: none; }
-            .mega-grid { grid-template-columns: 1fr; gap: 12px; }
-            .mega-group h4 { color: var(--orange); margin-bottom: 8px; padding: 8px 12px; }
-            
-            .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-            .nav-toggle.open span:nth-child(2) { opacity: 0; }
-            .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+            .mega-header {
+                display: none;
+            }
+
+            .mega-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .mega-group h4 {
+                color: var(--orange);
+                margin-bottom: 8px;
+                padding: 8px 12px;
+            }
+
+            .nav-toggle.open span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .nav-toggle.open span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav-toggle.open span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
 
             /* Contact Layout Adjustments */
-            .contact-grid { grid-template-columns: 1fr; }
-            .contact-visual { min-height: 500px; padding: 40px; }
-            .contact-form-wrapper { padding: 60px 40px; }
-            
-            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-visual {
+                min-height: 500px;
+                padding: 40px;
+            }
+
+            .contact-form-wrapper {
+                padding: 60px 40px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         @media (max-width: 768px) {
-            .subpage-hero { padding-top: 120px; padding-bottom: 60px; }
-            .hero-title { font-size: 3rem; }
-            .form-row { grid-template-columns: 1fr; gap: 20px; }
-            .contact-form-wrapper { padding: 40px 24px; }
-            
+            .subpage-hero {
+                padding-top: 120px;
+                padding-bottom: 60px;
+            }
+
+            .hero-title {
+                font-size: 3rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .contact-form-wrapper {
+                padding: 40px 24px;
+            }
+
             /* Adjust Glass Panel for Mobile */
-            .glass-panel { padding: 24px; gap: 24px; }
-            .glass-panel-item { grid-template-columns: 40px 1fr; gap: 16px; }
-            .glass-panel-icon { width: 40px; height: 40px; font-size: 1rem; }
-            .glass-panel-text p, .glass-panel-text a { font-size: 1rem; }
-            
-            .footer-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
-            .footer-brand p { margin: 24px auto 0; }
-            .footer-contact li { justify-content: center; text-align: left; }
-            .hero-whatsapp-bar { margin: 10px auto 0; }
+            .glass-panel {
+                padding: 24px;
+                gap: 24px;
+            }
+
+            .glass-panel-item {
+                grid-template-columns: 40px 1fr;
+                gap: 16px;
+            }
+
+            .glass-panel-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            .glass-panel-text p,
+            .glass-panel-text a {
+                font-size: 1rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .footer-brand p {
+                margin: 24px auto 0;
+            }
+
+            .footer-contact li {
+                justify-content: center;
+                text-align: left;
+            }
+
+            .hero-whatsapp-bar {
+                margin: 10px auto 0;
+            }
         }
     </style>
 </head>
@@ -1053,10 +1169,14 @@
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    
+
                     <!-- Services Dropdown (Right Underneath) -->
                     <li class="nav-item has-dropdown">
-                        <a class="nav-link" href="services.html">Services <span class="nav-arrow"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></a>
+                        <a class="nav-link" href="services.html">Services <span class="nav-arrow"><svg
+                                    viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg></span></a>
                         <div class="dropdown-menu">
                             <a href="services.html#provisions">Food Provisions Supply</a>
                             <a href="services.html#bonded">Bonded Stores</a>
@@ -1071,10 +1191,14 @@
                             <a href="services.html#publications">Nautical Charts</a>
                         </div>
                     </li>
-                    
+
                     <!-- Ports Mega Menu (Centered) -->
                     <li class="nav-item has-mega">
-                        <a class="nav-link" href="javascript:void(0)">Ports <span class="nav-arrow"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></a>
+                        <a class="nav-link" href="javascript:void(0)">Ports <span class="nav-arrow"><svg
+                                    viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg></span></a>
                         <div class="mega-menu">
                             <div class="mega-header">
                                 <div class="mega-header-title">Seychelles & African Port Network</div>
@@ -1088,10 +1212,11 @@
                             </div>
                         </div>
                     </li>
-                    
+
                     <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <a class="btn btn-primary" style="padding: 14px 32px; font-size: 0.85rem;" href="request-quote.html">Get Quote</a>
+                <a class="btn btn-primary" style="padding: 14px 32px; font-size: 0.85rem;" href="request-quote.html">Get
+                    Quote</a>
             </nav>
         </div>
     </header>
@@ -1109,7 +1234,8 @@
                     </ul>
                     <span class="eyebrow" style="color: var(--orange);">24/7 Communications Desk</span>
                     <h1 class="hero-title">Get in Touch</h1>
-                    <p class="hero-desc">We are on call 24 hours a day, 7 days a week, 365 days a year to support merchant vessels calling at Port Victoria, Mahé, and surrounding anchorages.</p>
+                    <p class="hero-desc">We are on call 24 hours a day, 7 days a week, 365 days a year to support
+                        merchant vessels calling at Port Victoria, Mahé, and surrounding anchorages.</p>
                 </div>
             </div>
         </section>
@@ -1118,19 +1244,20 @@
         <section class="contact-section">
             <div class="container">
                 <div class="contact-grid reveal">
-                    
+
                     <!-- Left Side: Visual & Unified Info Panel -->
                     <div class="contact-visual">
                         <img src="assets/imgs/contact-page-image-new.jpg" alt="Port Victoria" class="contact-visual-bg">
                         <div class="contact-visual-overlay"></div>
-                        
+
                         <div class="contact-visual-content">
                             <h3>Direct Lines to Operations</h3>
-                            <p>Reach our dedicated team for immediate assistance with your vessel's supply requirements.</p>
-                            
+                            <p>Reach our dedicated team for immediate assistance with your vessel's supply requirements.
+                            </p>
+
                             <!-- Unified Glass Panel -->
                             <div class="glass-panel">
-                                
+
                                 <!-- Address -->
                                 <div class="glass-panel-item">
                                     <div class="glass-panel-icon"><i class="fas fa-map-marker-alt"></i></div>
@@ -1139,7 +1266,7 @@
                                         <p>New Port, Port Victoria, Mahé, Seychelles</p>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Contact Person -->
                                 <div class="glass-panel-item">
                                     <div class="glass-panel-icon"><i class="fas fa-user-tie"></i></div>
@@ -1148,7 +1275,7 @@
                                         <p>Jean Hoareau</p>
                                     </div>
                                 </div>
-                                
+
                                 <!-- WhatsApp -->
                                 <div class="glass-panel-item">
                                     <div class="glass-panel-icon whatsapp"><i class="fab fa-whatsapp"></i></div>
@@ -1157,16 +1284,18 @@
                                         <p><a href="https://wa.me/2482743244">(+248) 2 743 244</a></p>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Email -->
                                 <div class="glass-panel-item">
                                     <div class="glass-panel-icon"><i class="fas fa-envelope"></i></div>
                                     <div class="glass-panel-text">
                                         <h4>Email Us</h4>
-                                        <p><a href="mailto:sales@shipchandlerseychelles.com">sales@shipchandlerseychelles.com</a></p>
+                                        <p><a
+                                                href="mailto:sales@shipchandlerseychelles.com">sales@shipchandlerseychelles.com</a>
+                                        </p>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -1174,8 +1303,9 @@
                     <!-- Right Side: Form -->
                     <div class="contact-form-wrapper">
                         <h3>Send a Requisition</h3>
-                        <p class="form-subtitle">For urgent supplies, ETA updates, or custom quotes, use the secure form below. Our team responds within 2 hours.</p>
-                        
+                        <p class="form-subtitle">For urgent supplies, ETA updates, or custom quotes, use the secure form
+                            below. Our team responds within 2 hours.</p>
+
                         <form>
                             <div class="form-row">
                                 <div class="form-group">
@@ -1206,10 +1336,13 @@
 
                             <div class="form-group">
                                 <label for="msg">Message / Requisition Summary *</label>
-                                <textarea id="msg" placeholder="Please describe required supplies, vessel details, and expected ETA..." required></textarea>
+                                <textarea id="msg"
+                                    placeholder="Please describe required supplies, vessel details, and expected ETA..."
+                                    required></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Send Message Now</button>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Send
+                                Message Now</button>
                         </form>
                     </div>
 
@@ -1223,10 +1356,14 @@
                 <div style="text-align: left; margin-bottom: 32px;">
                     <span class="eyebrow">Strategic Maritime Hub</span>
                     <h2 style="font-size: clamp(2rem, 3vw, 2.5rem);">Port Victoria Operations Location</h2>
-                    <p style="color: var(--gray-500); max-width: 600px; margin-top: 12px;">Serving the Port of Victoria, Mahé. Our operations team coordinates directly with agents and port authorities for seamless deliveries.</p>
+                    <p style="color: var(--gray-500); max-width: 600px; margin-top: 12px;">Serving the Port of Victoria,
+                        Mahé. Our operations team coordinates directly with agents and port authorities for seamless
+                        deliveries.</p>
                 </div>
                 <div class="map-container">
-                    <iframe title="Port Victoria Seychelles Location" src="https://maps.google.com/maps?q=Port+Victoria+Seychelles&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="Port Victoria Seychelles Location"
+                        src="https://maps.google.com/maps?q=Port+Victoria+Seychelles&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -1244,7 +1381,9 @@
                             <span style="color: var(--orange);">Seychelles</span>
                         </span>
                     </a>
-                    <p>SHIP CHANDLER SEYCHELLES CO., LTD is a licensed marine supplier providing food provisions, food stores, bond store supply, drinks, snacks, and emergency vessel supply services across Port Victoria, Mahé, Seychelles.</p>
+                    <p>SHIP CHANDLER SEYCHELLES CO., LTD is a licensed marine supplier providing food provisions, food
+                        stores, bond store supply, drinks, snacks, and emergency vessel supply services across Port
+                        Victoria, Mahé, Seychelles.</p>
                 </div>
 
                 <div class="footer-col">
@@ -1273,18 +1412,22 @@
                     <h4>Contact Us</h4>
                     <ul class="footer-contact">
                         <li><i class="fas fa-map-marker-alt"></i> New Port, Port Victoria, Mahé, Seychelles</li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:sales@shipchandlerseychelles.com" style="color:inherit;">sales@shipchandlerseychelles.com</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:sales@shipchandlerseychelles.com"
+                                style="color:inherit;">sales@shipchandlerseychelles.com</a></li>
                         <li><i class="fas fa-user-tie"></i> Jean Hoareau</li>
                         <li>
-                            <a class="hero-whatsapp-bar" href="https://wa.me/2482743244" target="_blank" rel="noopener noreferrer" aria-label="Direct WhatsApp contact (+248) 2 743 244">
+                            <a class="hero-whatsapp-bar" href="https://wa.me/2482743244" target="_blank"
+                                rel="noopener noreferrer" aria-label="Direct WhatsApp contact (+248) 2 743 244">
                                 <span class="hero-whatsapp-icon" aria-hidden="true">
                                     <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                        <path
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                                     </svg>
                                 </span>
                                 <span class="hero-whatsapp-tag">WhatsApp:</span>
                                 <span class="hero-whatsapp-num" style="color: var(--orange);">(+248) 2 743 244</span>
-                                <span class="hero-whatsapp-arrow" style="color: var(--orange);" aria-hidden="true">&rarr;</span>
+                                <span class="hero-whatsapp-arrow" style="color: var(--orange);"
+                                    aria-hidden="true">&rarr;</span>
                             </a>
                         </li>
                     </ul>
@@ -1298,7 +1441,8 @@
     </footer>
 
     <!-- FLOATING WHATSAPP -->
-    <a href="https://wa.me/2482743244" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Contact +248 2 743 244">
+    <a href="https://wa.me/2482743244" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="WhatsApp Contact +248 2 743 244">
         <i class="fab fa-whatsapp"></i>
     </a>
 

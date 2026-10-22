@@ -150,6 +150,7 @@ h6 {
 ========================================= */
 .site-header {
   position: fixed;
+  padding: 0 20px;
   top: 0;
   left: 0;
   width: 100%;

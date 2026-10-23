@@ -294,6 +294,8 @@ h6 {
   box-shadow: var(--shadow-lg);
   padding: 16px;
   min-width: 280px;
+  max-height: 400px;
+  overflow-y: auto;
   opacity: 0;
   visibility: hidden;
   transition: var(--transition);
